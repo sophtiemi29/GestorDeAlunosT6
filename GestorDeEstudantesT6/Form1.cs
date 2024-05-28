@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace GestorDeEstudantesT6
 {
-    public partial class FormMenuPrincipal : Form
+    public partial class Form1 : Form
     {
-        public FormMenuPrincipal()
+        public Form1()
         {
             InitializeComponent();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

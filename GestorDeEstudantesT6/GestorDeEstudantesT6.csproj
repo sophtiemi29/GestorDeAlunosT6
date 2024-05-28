@@ -33,7 +33,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MySql.Data">
+    <Reference Include="MySql.Data, Version=8.4.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>.\MySql.Data.dll</HintPath>
     </Reference>
     <Reference Include="System" />
@@ -50,11 +51,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Estudante.cs" />
-    <Compile Include="Form inserir estudante.cs">
+    <Compile Include="FormInserirEstudante.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form inserir estudante.Designer.cs">
-      <DependentUpon>Form inserir estudante.cs</DependentUpon>
+    <Compile Include="FormInserirEstudante.Designer.cs">
+      <DependentUpon>FormInserirEstudante.cs</DependentUpon>
     </Compile>
     <Compile Include="FormMenuPrincipal.cs">
       <SubType>Form</SubType>
@@ -62,23 +63,23 @@
     <Compile Include="FormMenuPrincipal.Designer.cs">
       <DependentUpon>FormMenuPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="LoginForm.cs">
+    <Compile Include="Login_Form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoginForm.Designer.cs">
-      <DependentUpon>LoginForm.cs</DependentUpon>
+    <Compile Include="Login_Form.Designer.cs">
+      <DependentUpon>Login_Form.cs</DependentUpon>
     </Compile>
     <Compile Include="MeuBancoDeDados.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form inserir estudante.resx">
-      <DependentUpon>Form inserir estudante.cs</DependentUpon>
+    <EmbeddedResource Include="FormInserirEstudante.resx">
+      <DependentUpon>FormInserirEstudante.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMenuPrincipal.resx">
       <DependentUpon>FormMenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LoginForm.resx">
-      <DependentUpon>LoginForm.cs</DependentUpon>
+    <EmbeddedResource Include="Login_Form.resx">
+      <DependentUpon>Login_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -101,9 +102,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="NewFolder1\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
